@@ -1,7 +1,22 @@
 import React from "react";
+import { useScrollReveal } from "./useScrollReveal";
 
-export function Card({ children }) {
-  return <div className="card">{children}</div>;
+/**
+ * Wrap each Card in its own observer so cards in a grid
+ * stagger naturally as they enter the viewport.
+ */
+export function Card({ children, delay = 0 }) {
+  const { ref, visible } = useScrollReveal({ threshold: 0.1 });
+
+  return (
+    <div
+      ref={ref}
+      className={`card reveal reveal--up ${visible ? "is-visible" : ""}`}
+      style={{ transitionDelay: `${delay}ms` }}
+    >
+      {children}
+    </div>
+  );
 }
 
 export function CardTitle({ children }) {

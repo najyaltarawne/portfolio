@@ -1,18 +1,29 @@
-import React from "react";
-
-
-
+import React, { useEffect, useRef } from "react";
 
 export default function Hero({ profile }) {
   const { name, headline, location, email, links, highlights } = profile;
 
+  // Hero animates on mount (not scroll) — it's always the first thing visible
+  const leftRef  = useRef(null);
+  const rightRef = useRef(null);
+
+  useEffect(() => {
+    // Tiny rAF delay so the CSS transition fires after paint
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        leftRef.current?.classList.add("is-visible");
+        // right side staggers in 120ms later
+        setTimeout(() => rightRef.current?.classList.add("is-visible"), 120);
+      });
+    });
+  }, []);
+
   return (
     <section className="hero" id="top">
-    
-
       <div className="hero__bg" aria-hidden="true" />
       <div className="container hero__inner">
-        <div className="hero__left">
+
+        <div ref={leftRef} className="hero__left reveal reveal--up">
           <div className="chip">Available for Work • Internships • Collaboration</div>
 
           <h1 className="h1">
@@ -45,7 +56,7 @@ export default function Hero({ profile }) {
           </div>
         </div>
 
-        <div className="hero__right">
+        <div ref={rightRef} className="hero__right reveal reveal--up">
           <div className="glass">
             <div className="glass__title">Quick stats</div>
             <div className="stats">
@@ -74,6 +85,7 @@ export default function Hero({ profile }) {
             <span className="badge">Algorithms</span>
           </div>
         </div>
+
       </div>
     </section>
   );
