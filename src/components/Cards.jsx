@@ -1,5 +1,5 @@
 import React from "react";
-import { useScrollReveal } from "./useScrollReveal";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 /**
  * Wrap each Card in its own observer so cards in a grid

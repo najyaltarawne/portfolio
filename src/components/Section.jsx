@@ -1,5 +1,5 @@
 import React from "react";
-import { useScrollReveal } from "./useScrollReveal";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 export default function Section({ id, title, subtitle, children }) {
   const { ref, visible } = useScrollReveal({ threshold: 0.08, rootMargin: "-30px" });
