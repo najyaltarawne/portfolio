@@ -75,7 +75,7 @@ export default function App() {
 
           <Card delay={320}>
             <CardTitle>dataScience</CardTitle>
-            <PillRow items={profile.skills.tools} />
+            <PillRow items={profile.skills.dataScience} />
           </Card>
 
           <Card delay={400}>
