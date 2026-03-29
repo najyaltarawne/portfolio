@@ -26,7 +26,7 @@ export const profile = {
       databases: ["PostgreSQL", "ER Design"],
       systems: ["Sockets", "POSIX Threads", "Semaphores", "Unix IPC"],
       tools: ["GitHub", "Git", "Next,js"],
-      dataScience: ["Pandas", "NumPy"]
+      dataScience: ["Pandas", "NumPy"],
     },
   
     projects: [
