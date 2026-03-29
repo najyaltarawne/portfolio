@@ -21,11 +21,12 @@ export const profile = {
     ],
   
     skills: {
-      languages: ["JavaScript", "C++", "SQL"],
-      web: ["HTML", "CSS", "React"],
-      databases: ["PostgreSQL", "Normalization (3NF/BCNF)", "ER Design"],
+      languages: ["JavaScript", "C++", "SQL", "python"],
+      web: ["HTML", "CSS", "React", "Node.js"],
+      databases: ["PostgreSQL", "ER Design"],
       systems: ["Sockets", "POSIX Threads", "Semaphores", "Unix IPC"],
-      tools: ["GitHub", "Next,js"]
+      tools: ["GitHub", "Git", "Next,js"],
+      dataScience: ["Pandas", "NumPy"]
     },
   
     projects: [
@@ -70,7 +71,7 @@ export const profile = {
       {
         school: "University of Houston",
         degree: "B.S. in Computer Science (Math Minor)",
-        details: "GPA: 3.82 • Transfer Excellence Scholarship. Honors list"
+        details: "GPA: 3.82 • Transfer Excellence Scholarship. Honors list . Reynolds & Reynolds Company Scholarship"
       },
       {
         school: "Houston Community College",
