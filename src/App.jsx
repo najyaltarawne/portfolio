@@ -45,7 +45,7 @@ export default function App() {
         </div>
       </Section>
 
-      <Section id="skills" title="Skills" subtitle="The tools I'm comfortable shipping with.">
+      <Section id="skills" title="Skills" subtitle="The tools I'm comfortable with, eager to learn more.">
         <div className="grid3">
           {/* Stagger each skill card by 80ms */}
           <Card delay={0}>
@@ -70,6 +70,11 @@ export default function App() {
 
           <Card delay={320}>
             <CardTitle>Tools</CardTitle>
+            <PillRow items={profile.skills.tools} />
+          </Card>
+
+          <Card delay={320}>
+            <CardTitle>dataScience</CardTitle>
             <PillRow items={profile.skills.tools} />
           </Card>
 
