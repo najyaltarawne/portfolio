@@ -1,6 +1,6 @@
 # Personal Portfolio – Najy AlTarawne
 
-This is my personal  portfolio built with **React + Vite**.  
+This is my personal  portfolio built with **React + Vite**
 
 
 🌐 **Live Site:**  
