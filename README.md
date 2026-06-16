@@ -1,6 +1,6 @@
 # Personal Portfolio – Najy AlTarawne
 
-This is my personal  portfolio built with **React + Vite**.  
+This is my personal  portfolio built with **React + Vite**
 
 
 🌐 **Live Site:**  
@@ -21,7 +21,7 @@ https://najyaltarawne.github.io/portfolio/
 ## ✨ Features
 
 - Responsive modern UI
-- Reusable component-based structure
+- Reusable component based structure
 - Projects showcase with links
 - Skills and experience sections
 - Fast static deployment
