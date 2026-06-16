@@ -9,21 +9,20 @@ export const profile = {
     },
   
     about: [
-      "I’m a Computer Science student at the University of Houston with a strong interest in software engineering and building full stack applications.",
-      "I love working in algorithms, systems programming, and database design. I also have a math minor",
+      "I’m a Computer Science graduate from the University of Houston with a strong interest in software engineering and building full stack applications.",
       "I aim for clean, practical solutions and I like working in teams."
     ],
   
     highlights: [
-      { label: "GPA", value: "3.82" },
+      { label: "GPA", value: "3.85" },
       { label: "Focus", value: "Software Engineering" },
       { label: "Strengths", value: "Databases • Full stack • Systems" }
     ],
   
     skills: {
       languages: ["JavaScript", "C++", "SQL", "python"],
-      web: ["HTML", "CSS", "React", "Node.js"],
-      databases: ["PostgreSQL", "ER Design"],
+      web: ["HTML", "CSS", "React"],
+      databases: ["PostgreSQL"],
       systems: ["Sockets", "POSIX Threads", "Semaphores", "Unix IPC"],
       tools: ["GitHub", "Git", "Next,js"],
       dataScience: ["Pandas", "NumPy"],
