@@ -143,7 +143,7 @@ export default function App() {
         </div>
 
         <div className="callout">
-          <div className="callout__text">Feel free to connect with me !!</div>
+          <div className="callout__text">Feel free to connect with me !</div>
         </div>
       </Section>
     </div>
